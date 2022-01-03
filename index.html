@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<title>Pokedex Homework</title>
+<script defer src="pokemon.js"></script>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="d-flex vh-100">
+        <div class="col-6">
+            <img src="/images/charizard.png" alt="charizard" id='charizard' class="w-75">      
+        </div>
+        <div class="d-flex flex-column align-items-end justify-content-evenly col-6">
+            <img src="/images/squirtle.png" alt="squirtle" id="squirtle" class="w-25">
+            <img src="/images/pikachu.png" alt="pikachu" id="pikachu" class="w-50">
+        </div>
+    </div>
+    <div class="d-flex flex-column bg-warning align-items-center justify-content-evenly border border-dark rounded m-auto w-50 h-75 position-absolute top-50 start-50 translate-middle">
+        <h1 class="text-decoration-underline">Online Pokedex</h1>
+        <form id="search" class="border border-primary bg-danger h-75 w-75 d-flex flex-column align-items-center justify-content-center">
+            <h6>Type in the name of any pokemon to pull up a profile page for that pokemon.</h6>
+            <div>
+                <input type="text"  id="search_bar" placeholder="Enter Pokemon Here...">
+            </div>
+            <div class="d-flex justify-content-center pt-4">
+                <button type="submit" class="btn btn-primary mb-3">Search</button>
+            </div>
+        </form>
+        <div class="card visually-hidden" id="poke_card" style="width: 18rem;">
+            <img src="" class="card-img-top" id="card_img" alt="...">
+            <div class="card-body">
+              <h3 class="card-title text-decoration-underline text-capitalize text-center" id="poke_name"></h3>
+              <h6 class="text-decoration-underline">Abilities</h6>
+              <ul id="abilities"></ul>
+            </div>
+          </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
