@@ -52,5 +52,5 @@ const createCard = (image,pokemon,ability) => {
     });
 
 
-    document.getElementById('poke_card').className = "card"
+    document.getElementById('poke_card').className = "card bg-transparent"
 };
